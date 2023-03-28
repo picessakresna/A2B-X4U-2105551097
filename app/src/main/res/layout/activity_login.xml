@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".activity_login">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="1080dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="LOGIN"
+        android:textColor="@color/teal_700"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/buttonbacklogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_back"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/logintext1"
+        android:layout_below="@id/login"
+        android:layout_width="1080dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Selamat Datang Kembali"
+        android:textColor="@color/teal_700"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/gambarlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@id/logintext1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tanemanlogin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/loginlayerinput"
+        android:layout_below="@id/gambarlogin"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/inputloginnama"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="Masukan Nama Anda"
+            android:textColor="@color/black"
+            android:textColorHint="@color/softblack"
+            android:paddingLeft="30dp"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@color/gray"
+            />
+
+        <EditText
+            android:id="@+id/inputloginpass"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:hint="Masukan Password Anda"
+            android:textColor="@color/black"
+            android:textColorHint="@color/softblack"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="30dp"
+            android:background="@drawable/rounded_btn"
+            android:backgroundTint="@color/gray"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/loginforgotpassword"
+        android:layout_below="@id/loginlayerinput"
+        android:layout_width="1080dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lupa Password?"
+        android:textColor="@color/softblack"
+        android:textSize="15sp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginforgotpassword"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/teal_700"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:background="@drawable/rounded_btn"
+        />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:id="@+id/haveaccountlogin"
+        android:layout_below="@id/buttonlogin"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum punya akun?"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_700"
+            android:paddingLeft="5dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/atas"
+        />
+
+    <ImageView
+        android:layout_width="1800dp"
+        android:layout_height="320dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/lidahbuaya"
+        />
+
+    <TextView
+        android:id="@+id/starthalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HALO"
+        android:layout_marginTop="170dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/usernamastart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:layout_marginStart="30dp"
+        />
+
+</RelativeLayout>
